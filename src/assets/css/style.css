@@ -1,0 +1,250 @@
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #EDEDED;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+/*
+::-webkit-scrollbar-track {
+    background-color: #E7E8E2;
+}
+*/
+
+#field {
+    font-size: 20px;
+}
+
+.profile {
+    width: 250px;
+    height: auto;
+}
+
+@media screen and (max-width: 768px) {
+    .profile {
+        width: 200px;
+        height: auto;
+    }
+
+    #field {
+        font-size: 16px;
+    }
+}
+
+.nav-btn {
+    opacity: 0.7;
+}
+
+.nav-btn:hover {
+    opacity: 1;
+}
+
+.l-to-r-half-border-bottom {
+    border-bottom: solid 2.5px #000000;
+    border-image: linear-gradient(to right, #000 35%, transparent 35%) 100% 1;
+}
+
+.education {
+    border: 1px solid #e1e4e8; 
+    font-size: 20px;
+    transition: all 0.4s ease-out;
+}
+
+.education > img {
+    width: 75px;
+    height: auto;
+}
+
+.education:hover {
+    border-color: #d0d7de;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05); 
+}
+
+.technology-slot {
+    border-style: solid;
+    border-width: 0.1px;
+    border-color: #e1e4e8;
+    font-size: 20px;
+    padding: 10px;
+    transition: all 0.2s ease-out;
+    min-width: 100px;
+    min-height: 100px;
+}
+
+@media screen and (max-width: 768px) {
+    .technology-slot {
+        min-width: 90px;
+        min-height: 90px;
+    }
+}
+
+.technology-slot:hover {
+    border-color: #d0d7de;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    transform: translateY(-2px);
+    transition: all 0.2s ease-in;
+}
+
+.social-icon {
+    opacity: 0.7;
+    transition: all 0.2s ease-in !important; /* overrides nav-link from BS */
+}
+
+.social-icon:hover {
+    opacity: 1;
+    transform: translateY(-4px);
+}
+
+.links {
+    opacity: 0;
+}
+
+.links.show {
+    opacity: 1;
+    transition: opacity 1.5s ease-in;
+    transition-delay: 0.5s;
+}
+
+.links.show2 {
+    opacity: 1;
+    transition: opacity 0.5s ease-in;
+    transition-delay: 0.5s;
+}
+
+/*
+.links {
+    transition: opacity 1s ease-in;
+    transition-delay: 0.5s;
+}
+
+.links-hide {
+    opacity: 0;
+}
+
+.links-show {
+    opacity: 1;
+}
+*/
+
+/* DISABLE ANIMATION
+.element {
+    transition: opacity 0.5s ease-in, transform 0.5s ease-in;
+    transition-delay: 0.5s;
+}
+
+.hide {
+    opacity: 0;
+    transform: translateY(30px);
+    // transition: opacity 0.5s ease-in, transform 0.5s ease-in;
+}
+
+.element:not(.hide) {
+    opacity: 1;
+    transform: translateY(0);
+}
+*/
+
+/* THE SAME AS NOT HIDE
+.show {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.5s ease-in, transform 0.5s ease-in;
+}*/
+
+
+.fs-institution {
+    font-size: 20px;
+}
+
+.fs-degree {
+    font-size: 16px;
+}
+
+footer {
+    font-size: 16px;
+}
+
+@media screen and (max-width: 768px) {
+    .education > img {
+        width: 75px;
+        height: auto;
+    }
+
+    .fs-institution {
+        font-size: 16px;
+    }
+
+    .fs-degree {
+        font-size: 12px;
+    }
+}
+
+.the-image-container {
+    width: 100%;
+    max-width: 510px;
+    background-color: #FCFFF9;
+    transition-duration: 0.4s;
+}
+
+.the-image-container:hover {
+    transition-duration: 0.4s;
+    transform: translateY(-4px);
+    box-shadow: 0 0 10px rgba(140, 140, 140, 0.45);
+}
+
+.image-wrapper {
+    overflow: hidden;
+}
+
+.the-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;    
+    object-position: center; 
+    transition-duration: 0.4s;
+}
+
+.the-image-container:hover .the-image {
+    transform: scale(1.05);
+    transition-duration: 0.4s;
+}
+
+.description {
+    font-size: 16px;
+}
+
+.title {
+    font-size: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .description {
+        font-size: 14px;
+    }
+    .title {
+        font-size: 18px;
+    }
+}
+
+.source-wrapper {
+    position: relative;
+}
+
+.source-wrapper::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    border-bottom: solid 2.5px #000000;
+    transition: width 0.3s ease-in;
+    margin-top: 3px;
+}
+
+.source-wrapper:hover::after {
+    width: 100%;
+}
