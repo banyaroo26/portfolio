@@ -2,7 +2,7 @@ const Projects = ({projectChunks}) => {
     return (
         <section className="container my-auto mt-5">
             <span className="fs-2 fw-semibold pb-1 mb-4 l-to-r-half-border-bottom"> Projects </span>
-            <section className="container py-2 mt-md-2 mt-2">
+            <section className="container py-2">
                 {
                     projectChunks.map((chunk, cindex) => {
                         return (
@@ -11,7 +11,7 @@ const Projects = ({projectChunks}) => {
                                 {
                                     chunk.map((project, pindex) => {
                                         return (
-                                            <div className="card the-image-container rounded-0 mt-4" key={pindex}>
+                                            <div className={`card the-image-container rounded-0 mt-md-4 ${pindex==0 ? "mt-4" : ""}`} key={pindex}>
                                                 <div className="image-wrapper">
                                                     <img className="the-image" src={project.image} />
                                                 </div>
