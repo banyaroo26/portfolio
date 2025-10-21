@@ -7,11 +7,13 @@ const Hero = () => {
                 <img src={profilePicture} className="rounded-circle border border-3 border-dark profile" alt="Banyar Oo" id="profile" />
                 <div className="text-center">
                     <p className="fs-1 fw-semibold mb-2" id="name"> Banyar Oo </p>
-                    <p className="mb-2 fw-semilight text-muted" id="field"> Machine Learning · Natural Language Processing · Back-end Development </p>
+                    <p className="mb-2 fw-semilight text-muted" id="field"> Knowledge Engineering student @ UCSY — passionate about Data, Machine Learning, NLP, and Web Development. </p>
                 </div>
             </div>
         </section>
     )
 }
+
+// <p className="mb-2 fw-semilight text-muted" id="field"> Machine Learning · Natural Language Processing · Back-end Development </p> 
 
 export default Hero

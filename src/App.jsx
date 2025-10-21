@@ -1,7 +1,7 @@
 import Hero from "./Hero.jsx"
 import Contact from "./Contact.jsx"
 import Education from './Education.jsx'
-import Technologies from './Technologies.jsx'
+import TechnologyWrapper from './TechnologyWrapper.jsx'
 import Technology from './Technology.jsx'
 import Activities from "./Activities.jsx"
 import Footer from "./Footer.jsx"
@@ -28,17 +28,27 @@ const App = () => {
         <Contact />
         <Education />
 
-        <Technologies title="Technologies">
+        <TechnologyWrapper title="Web Stack">
           {
-            data.technologies.map((tech) => {
+            data.webStack.map((tech) => {
               return (
                 <Technology title={tech.title} image={tech.image} key={tech.title} />
               )
             })
           }
-        </Technologies>
+        </TechnologyWrapper>
 
-        <Technologies title="Also Familiar With">
+        <TechnologyWrapper title="AI / Data Stack">
+          {
+            data.aiDataStack.map((tech) => {
+              return (
+                <Technology title={tech.title} image={tech.image} key={tech.title} />
+              )
+            })
+          }
+        </TechnologyWrapper>
+
+        <TechnologyWrapper title="Familiar With">
           {
             data.familiar.map((tech) => {
               return (
@@ -46,9 +56,9 @@ const App = () => {
               )
             })
           }
-        </Technologies>
+        </TechnologyWrapper>
 
-        <Activities data={data.activities} />
+        {/* <Activities data={data.activities} /> */}
 
         <Projects projectChunks={chunkArray(data.projects, 2)} />
 

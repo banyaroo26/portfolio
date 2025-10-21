@@ -1,4 +1,4 @@
-const Technologies = (props) => {
+const TechnologyWrapper = (props) => {
     return (
         <section className="container w-100 mt-5">
             <div className="d-flex flex-column align-items-start justify-content-center hide element" id="technologies">
@@ -11,4 +11,4 @@ const Technologies = (props) => {
     )
 }
 
-export default Technologies
+export default TechnologyWrapper
